@@ -5,6 +5,9 @@
       location = "container:SwiftUI"
       name = "SwiftUI">
       <FileRef
+         location = "group:WordScramble/WordScramble.xcodeproj">
+      </FileRef>
+      <FileRef
          location = "group:VolumeVerter/VolumeVerter.xcodeproj">
       </FileRef>
       <FileRef

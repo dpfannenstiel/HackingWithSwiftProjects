@@ -96,20 +96,40 @@ Build a Conversion App.
 ### BetterRest
 
 * [Part 1](https://www.hackingwithswift.com/100/swiftui/26)
+	* Stepper 
+	* DatePicker
+	* Date
+	* DateComponents
+	* Calendar
+	* CreateML
 * [Part 2](https://www.hackingwithswift.com/100/swiftui/27)
+	* DatePicker.labelsHidden
+	* CoreML 
 * [Part 3](https://www.hackingwithswift.com/100/swiftui/28)
 
 ## Project 5
 
-### XXXXXX
+### WordScramble
 
 * [Part 1](https://www.hackingwithswift.com/100/swiftui/29)
+	* List
+	* .listStyle(.grouped)
+		* Many options 
+	* Bundle
+		* Loading file  
+	* UITextChecker()
+	* NSRange
 * [Part 2](https://www.hackingwithswift.com/100/swiftui/30)
+	* .onSubmit()
+	* .autocapitalization
+	* withAnimation
+	* .onAppear
+	* fatalError() 
 * [Part 3](https://www.hackingwithswift.com/100/swiftui/31)
 
 ## Project 6
 
-### XXXXXX
+### Animations
 
 * [Part 1](https://www.hackingwithswift.com/100/swiftui/32)
 * [Part 2](https://www.hackingwithswift.com/100/swiftui/33)
