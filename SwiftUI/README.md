@@ -132,5 +132,19 @@ Build a Conversion App.
 ### Animations
 
 * [Part 1](https://www.hackingwithswift.com/100/swiftui/32)
+	* Implicit Animations
+	* .scaleEffect()
+	* .animation(_, value:) 
+	* .easeOut
+	* .interpolatingSpring()
+	* .repeatCount()
+	* .repeatForever()
+	* Animation Bindings
+	*  rotation3DEffect()
 * [Part 2](https://www.hackingwithswift.com/100/swiftui/33)
+	* .animation(nil, value: _)
+	* Animation Stack 
+	* .gesture
+	* DragGesture()
+	* .transition()
 * [Part 3](https://www.hackingwithswift.com/100/swiftui/34)
