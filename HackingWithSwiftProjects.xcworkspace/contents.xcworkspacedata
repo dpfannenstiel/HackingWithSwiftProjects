@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "container:SwiftUI"
+      name = "SwiftUI">
+      <FileRef
+         location = "group:VolumeVerter/VolumeVerter.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:WeSplit/WeSplit.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:GuessTheFlag/GuessTheFlag.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:RockPaperScissor/RockPaperScissor.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:ViewsAndModifiers/ViewsAndModifiers.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:BetterRest/BetterRest.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:README.md">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "group:README.md">
+   </FileRef>
+</Workspace>

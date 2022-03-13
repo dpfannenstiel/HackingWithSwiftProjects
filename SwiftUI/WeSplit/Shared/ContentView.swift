@@ -15,26 +15,35 @@ struct ContentView: View {
 
     let tipPercentages = [10, 15, 20, 25, 0]
 
-    var currencyCode: String {
-        Locale.current.currencyCode ?? "USD"
-    }
 
-    var totalPerPerson: Double {
-        let peopleCount = Double(numberOfPeople + 2)
+    var grandTotal: Double {
         let tipSelection = Double(tipPercentage)
 
         let tipValue = checkAmount / 100 * tipSelection
         let grandTotal = checkAmount + tipValue
+        return grandTotal
+    }
+
+    var totalPerPerson: Double {
+        let peopleCount = Double(numberOfPeople + 2)
         let amountPerPerson = grandTotal / peopleCount
 
         return amountPerPerson
+    }
+
+    private typealias CurrencyFormat = FloatingPointFormatStyle<Double>.Currency
+    private var currencyCode: String {
+        Locale.current.currencyCode ?? "USD"
+    }
+    private var currencyFormat: CurrencyFormat {
+        CurrencyFormat.currency(code: currencyCode)
     }
 
     var body: some View {
         NavigationView {
             Form {
                 Section {
-                    TextField("Amount", value: $checkAmount, format: .currency(code: currencyCode))
+                    TextField("Amount", value: $checkAmount, format: currencyFormat)
                         .keyboardType(.decimalPad)
                         .focused($amountIsFocused)
 
@@ -57,7 +66,16 @@ struct ContentView: View {
                 }
 
                 Section {
-                    Text(totalPerPerson, format: .currency(code: currencyCode))
+                    Text(grandTotal, format: currencyFormat)
+                         } header: {
+                        Text("Grand Total")
+                    }
+
+                Section {
+                    Text(totalPerPerson, format: currencyFormat)
+                        .foregroundColor(tipPercentage == 0 ? .red : .primary)
+                } header: {
+                    Text("Amount per person")
                 }
             }
             .navigationTitle("WeSplit")
